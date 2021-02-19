@@ -1,0 +1,43 @@
+.main {
+	background-color: #FFFFCC;
+	width: 350px;
+	padding: 10px;
+	display: block;
+}
+.main img{
+	width: 60px;
+	float: left;
+	display: flex;
+}
+.main h2 {
+	font: arial;
+	color: #0000CC;
+}
+
+.form-group {
+	width: 100%;
+	display: flex;
+	margin-bottom: 5px;
+}
+.form-group label {
+	color: #000066;
+	width: 25%;
+	float: left;
+	text-align: right;
+	padding-right: 5px;
+}
+.form-group input {
+	width: 50%;
+	float: left;
+}
+.form-group button {
+	margin-right: 5px;
+}
+.form-group .nav button{
+	border: solid 1px black;
+	background-color: #CCCCCC;
+	font: arial;
+}
+.form-group .nav img {
+	width: 15px;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ĐĂNG NHẬP HỆ THỐNG</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div  class="main">
+		<h2>ĐĂNG NHẬP HỆ THỐNG</h2>
+		<form method="post">
+			<div>
+				<img src="photos/login.png">				
+				<div style="">	
+				<div class="form-group">
+					<label>Tài khoản</label>
+					<input required="true" type="text" name="id">
+				</div>
+				<div class="form-group">
+					<label>Mật khẩu</label>
+					<input required="true" type="password" name="pw">
+				</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<label></label>
+				<button type="submit" value="OK" onclick="loggin()">Đăng nhập</button>
+				<script>
+					function loggin(){
+						alert("Đăng nhập thành công");
+					}
+				</script>
+				<button type="reset">Nhập lại</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
