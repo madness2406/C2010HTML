@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giải Phương Trình Bậc II</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="main">
+		<h3>Giải Phương Trình Bậc II</h3>
+		<div>
+			<button type="button" onclick="nhapa()">Nhập A</button>
+			<button type="button" onclick="nhapb()">Nhập B</button>
+			<button type="button" onclick="nhapc()">Nhập C</button>
+			<button type="button" onclick="inkq()">In Kết Quả</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var a,b,c
+		var delta,b1,x1,x2
+		function nhapa(){
+			a = parseInt(prompt("Nhập số A"))
+		}
+		function nhapb(){
+			b = parseInt(prompt("Nhập Giá Trị B"))
+		}
+		function nhapc(){
+			c = parseInt(prompt("Nhập Giá Trị C"))
+		}
+		function inkq(){
+			if(a == 0) { 
+				if(b == 0) {
+					if(c == 0) alert("Kết quả: Vô số nghiệm")
+					else alert("Kết quả: Vô nghiệm")
+				}else alert("Kết quả: " + (-c/b))
+			}else {
+				b1=b/2
+				delta = parseFloat(Math.pow(b1,2) - 4*a*c)
+				if(delta < 0) alert("Kết Quả: Vô nghiệm")
+				if(delta ==0) alert("Kết Quả: x = " + (-b1/a))
+				if(delta > 0) {
+					x1 = ((-b1) - Math.sqrt(delta))/a
+					x2 = ((-b1) + Math.sqrt(delta))/a
+					alert("Kết Quả: x1 = " + x1 "\nx2 = " + x2)
+				}
+			}
+		}
+	</script>
+</body>
+</html>

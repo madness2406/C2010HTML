@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Giải phương trình bậc 1</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="main">
+		<div class="tittle">
+			<h3>Giải Phương Trình Bậc 1</h3>
+		</div>
+		<div>
+			<button type="button" onclick="giatria()">Nhập Giá Trị A</button>
+			<button type="button" onclick="giatrib()">Nhập Giá Trị B</button>
+			<button type="button" onclick="gptbac1()">In Kết Quả</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var a,b
+		function giatria(){
+			do{
+				a = parseInt(prompt("Nhập giá trị a: "))
+			}while(a==0)
+		}
+		
+		function giatrib(){
+			b = parseInt(prompt("Nhập giá trị b: "))
+		}
+		
+		function gptbac1(){
+			alert("Kết quả: " + (-b/a))
+			document.write("Kết quả: " + (-b/a))
+		}
+	</script>
+</body>
+</html>
