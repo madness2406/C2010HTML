@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="main">
+		<div class="tittle">
+			<h3>Vẽ tam giác *</h3>
+		</div>
+		<div>
+			<button type="button" onclick="giatrin()">Nhập Giá Trị N</button>
+			<button type="button" onclick="vetamgiac()">Vẽ tam giác</button>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var N
+		function giatrin(){
+			do{
+				N = parseInt(prompt("Nhập số nguyên dương N"))
+				if(N<=0) N = parseInt(prompt("Nhập sai, nhập lại số nguyên dương N"))
+			}while(N<=0)
+		}
+		function vetamgiac(){
+			for(var i=1;i<=N;i++) {
+				for(var j=1;j<=i;j++){
+					document.write("*")
+				}
+				document.write("<br>")
+			}
+		}
+	</script>
+</body>
+</html>
